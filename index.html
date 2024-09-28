@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ca-FR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script type="module" src="./assets/js/main.js" defer></script>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="shortcut icon" href="#" />
+    <script
+      type="module"
+      src="https://kit.fontawesome.com/d0b4d9ccc9.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>AGIFY</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <h1><a class="title_link" href="https://agify.io/" target="_blank">agify.io</a></h1>
+        <h2>Estimation de l'âge en rapport au Prénom</h2>
+      </div>
+    </header>
+    <main>
+      <div class="div_main">
+        <form class="ctrl_form">
+          <label for="input_name"></label>
+          <div class="btn_input">
+            <input
+              type="text"
+              id="input_name"
+              placeholder="Veuillez entrer un prénom ici"
+            />
+            <button type="submit" class="btn_search">
+              <i class="fa-solid fa-magnifying-glass"></i> Recherche
+            </button>
+          </div>
+        </form>
+        <p class="result"></p>
+      </div>
+      <div class="main_history">
+        <div class="history">
+          <button class="show_history show_history-hidden">
+            <i class="fa-regular fa-eye"></i> Voir l'historique
+          </button>
+          <button class="hide_history hide_history-hidden">
+            <i class="fa-regular fa-eye-slash"></i> Cacher l'historique
+          </button>
+          <ul class="list_history list_history-hidden">
+          </ul>
+        </div>
+      </div>
+      <p><button id="btn_reset" type="button">reset</button></p>
+    </main>
+    <footer>
+      <div class="footer">
+        <p>Gabriel Taca</p>
+        <p><time datetime="2024-09-27">27 septembre 2024</time></p>
+      </div>
+    </footer>
+  </body>
+</html>
